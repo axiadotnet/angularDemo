@@ -1,0 +1,14 @@
+
+
+
+.post-container{
+  background-color: purple;
+  width: 400px;
+  height: 200px;
+}
+
+.post-list{
+  width: 350px;
+  height: 180px;
+  overflow-y: scroll;
+}
