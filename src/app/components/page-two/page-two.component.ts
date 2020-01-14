@@ -11,7 +11,7 @@ export class PageTwoComponent implements OnInit {
   public posts: any;
 
   constructor(private dataPippo: DataService) {
-    dataPippo.getPost().subscribe(dati => {
+    dataPippo.postsData.subscribe(dati => {
       this.posts = dati;
     });
   }

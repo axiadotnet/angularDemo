@@ -11,7 +11,7 @@ export class UserComponent implements OnInit {
   public users: any[];
 
   constructor(private dataPippo: DataService) {
-    dataPippo.getUser().subscribe(dati => {
+    dataPippo.usersData.subscribe(dati => {
       this.users = dati;
     });
   }

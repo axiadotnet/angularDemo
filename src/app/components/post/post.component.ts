@@ -12,7 +12,7 @@ export class PostComponent implements OnInit {
   public posts: any[];
 
   constructor(private dataPippo: DataService) {
-    dataPippo.getPost().subscribe(dati => {
+    dataPippo.postsData.subscribe(dati => {
       console.log(dati);
 
       this.posts = dati;

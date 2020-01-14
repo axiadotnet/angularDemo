@@ -9,6 +9,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { FuckYouComponent } from './components/fuck-you/fuck-you.component';
 import { PostComponent } from './components/post/post.component';
 import { UserComponent } from './components/user/user.component';
+import { SearchComponent } from './components/search/search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { UserComponent } from './components/user/user.component';
     PageNotFoundComponent,
     FuckYouComponent,
     PostComponent,
-    UserComponent
+    UserComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
